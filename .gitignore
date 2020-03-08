@@ -132,6 +132,4 @@ dmypy.json
 .idea
 idea
 
-# Databases data
-data/**
-persist_conf/**
+
