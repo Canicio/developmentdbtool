@@ -1,6 +1,8 @@
 # Development Database Tool
 Tool to deploying databases for a software development environment.
 
+<br>
+
 ## Databases
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ![Mysql Logo](resources/mongodb_111x30.png) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -13,9 +15,13 @@ Tool to deploying databases for a software development environment.
 ![Mysql Logo](resources/phpmyadmin_82x46.png) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ![Mysql Logo](resources/pgadmin_105x54.png) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
+<br>
+
 ## Requirements
 * Docker Community Edition (https://docs.docker.com/install/)
 * Docker Compose (https://docs.docker.com/compose/install/)
+
+<br>
 
 ## Run Mongodb and its GUI (Mongo-express)
 ```bash
@@ -85,3 +91,8 @@ $ docker-compose -f mongo-compose.yml down
 $ docker-compose -f mysql-compose.yml down
 $ docker-compose -f postgres-compose.yml down
 ```
+
+<br>
+
+## License
+[MIT](LICENSE) (Massachusetts Institute of Technology)
