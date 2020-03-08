@@ -95,4 +95,4 @@ $ docker-compose -f postgres-compose.yml down
 <br>
 
 ## License
-[MIT](LICENSE) (Massachusetts Institute of Technology)
+[MIT](LICENSE)
