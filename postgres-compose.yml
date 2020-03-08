@@ -1,0 +1,30 @@
+version: '3.7'
+
+# Environment postgres
+
+services:
+
+  postgres:
+    image: postgres:9.6.17-alpine
+    container_name: postgres_9.6.17_alpine
+    ports:
+      - 5432:5432
+    volumes:
+      - ./databases_volumes/postgres/data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=mysecretpassword
+
+  pgadmin:
+    image: dpage/pgadmin4:4.19
+    container_name: pgadmin_4.19
+    ports:
+      - 5000:80
+    volumes:
+      # Required:  sudo chown -R 5050:5050 gui_volumes/pgadmin
+      - ./gui_volumes/pgadmin/persist_conf:/var/lib/pgadmin 
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=user@domain.com
+      - PGADMIN_DEFAULT_PASSWORD=mypass
+    depends_on:
+      - postgres
+

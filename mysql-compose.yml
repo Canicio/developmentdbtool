@@ -1,0 +1,29 @@
+version: '3.7'
+
+# Environment mysql
+
+services:
+
+  mysql:
+    image: mysql:8.0.19
+    container_name: mysql_8.0.19
+    ports:
+      - 3306:3306
+    volumes:
+      - ./databases_volumes/mysql/data:/var/lib/mysql
+      - ./databases_volumes/mysql/conf:/etc/mysql/conf.d
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+
+  phpmyadmin:
+    image: bitnami/phpmyadmin:5.0.1-debian-10-r38
+    container_name: phpmyadmin_5.0.1_debian_10
+    ports:
+      - 5001:80
+    volumes:
+      - ./gui_volumes/phpmyadmin/persist_conf:/bitnami
+    environment:
+      - DATABASE_HOST=mysql
+      #- PHPMYADMIN_ALLOW_ARBITRARY_SERVER=true
+    depends_on:
+      - mysql
