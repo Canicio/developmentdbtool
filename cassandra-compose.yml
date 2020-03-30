@@ -1,0 +1,28 @@
+version: '3.7'
+
+# Environment cassandra
+
+services:
+
+  cassandra:
+    image: cassandra:3.11.6
+    container_name: cassandra_3.11.6
+    ports:
+      - 9042:9042
+    volumes:
+      - ./databases_volumes/cassandra/data:/var/lib/cassandra
+      # Custom config:
+      #- ./databases_volumes/cassandra/conf/cassandra.yaml:/etc/cassandra/cassandra.yaml
+    environment:
+      - MAX_HEAP_SIZE=128M
+      - HEAP_NEWSIZE=24M
+
+  cassandra-web:
+    image: ipushc/cassandra-web
+    container_name: cassandra-web_v1.0.5
+    ports:
+      - 5003:8083
+    environment:
+      - CASSANDRA_PORT=9042
+    depends_on:
+      - cassandra
