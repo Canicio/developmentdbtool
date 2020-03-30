@@ -82,8 +82,10 @@ pass: mysecretpassword
 
 ## Run Cassandra (and Cassandra-Web)
 ```bash
-$ docker-compose -f cassandra-compose.yml up -d
+$ docker-compose -f cassandra-compose.yml up -d cassandra
 Starting cassandra     ... done
+# Wait 30 seconds for the cassandra service to finish getting up
+$ docker-compose -f cassandra-compose.yml up -d cassandra-web
 Starting cassandra-web ... done
 ```
 Go to http://localhost:5003/
