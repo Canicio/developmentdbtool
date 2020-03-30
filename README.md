@@ -4,16 +4,18 @@ Tool to deploying databases for a software development environment.
 <br>
 
 ## Databases
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-![Mysql Logo](resources/mongodb_111x30.png) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-![Mysql Logo](resources/mysql_70x47.png) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-![Mysql Logo](resources/postgres_120x55_despl.png) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+![Mysql Logo](resources/mongodb_111x30.png) &nbsp;&nbsp;&nbsp;
+![Mysql Logo](resources/mysql_70x47.png) &nbsp;&nbsp;&nbsp;
+![Mysql Logo](resources/postgres_120x55_despl.png) &nbsp;&nbsp;&nbsp;
+![Mysql Logo](resources/Apache_Cassandra_66_60.png) &nbsp;&nbsp;&nbsp;
 
 ## GUIs
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-![Mysql Logo](resources/mongo-express_142x35.png) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-![Mysql Logo](resources/phpmyadmin_82x46.png) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-![Mysql Logo](resources/pgadmin_105x54.png) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+![Mysql Logo](resources/mongo-express_142x35.png) &nbsp;&nbsp;&nbsp;
+![Mysql Logo](resources/phpmyadmin_82x46.png) &nbsp;&nbsp;&nbsp;
+![Mysql Logo](resources/pgadmin_105x54.png) &nbsp;&nbsp;&nbsp;
+![Mysql Logo](resources/cassandra_web_69_61b.png) &nbsp;&nbsp;&nbsp;
 
 <br>
 
