@@ -93,6 +93,7 @@ Go to http://localhost:5003/
 $ docker-compose -f mongo-compose.yml stop
 $ docker-compose -f mysql-compose.yml stop
 $ docker-compose -f postgres-compose.yml stop
+$ docker-compose -f cassandra-compose.yml stop
 ```
 
 ## Remove services. Don't worry, the data continues to persist!
@@ -100,6 +101,7 @@ $ docker-compose -f postgres-compose.yml stop
 $ docker-compose -f mongo-compose.yml down
 $ docker-compose -f mysql-compose.yml down
 $ docker-compose -f postgres-compose.yml down
+$ docker-compose -f cassandra-compose.yml down
 ```
 
 <br>
