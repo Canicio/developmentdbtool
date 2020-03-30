@@ -25,7 +25,7 @@ Tool to deploying databases for a software development environment.
 
 ## Run Mongodb (and Mongo-express)
 ```bash
-$ docker-compose -f mongo-compose.yml start
+$ docker-compose -f mongo-compose.yml up -d
 Starting mongo         ... done
 Starting mongo_express ... done
 ```
@@ -39,7 +39,7 @@ pass: root
 
 ## Run Mysql (and PhpMyAdmin)
 ```bash
-$ docker-compose -f mysql-compose.yml start
+$ docker-compose -f mysql-compose.yml up -d
 Starting mysql      ... done
 Starting phpmyadmin ... done
 ```
@@ -60,7 +60,7 @@ pass: root
 ## Run Postgres (and PgAdmin)
 ```bash
 # Required!:  sudo chown -R 5050:5050 gui_volumes/pgadmin
-$ docker-compose -f postgres-compose.yml start
+$ docker-compose -f postgres-compose.yml up -d
 Starting postgres ... done
 Starting pgadmin  ... done
 ```
