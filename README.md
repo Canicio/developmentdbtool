@@ -80,6 +80,14 @@ user: postgres
 pass: mysecretpassword
 ```
 
+## Run Cassandra (and Cassandra-Web)
+```bash
+$ docker-compose -f cassandra-compose.yml up -d
+Starting cassandra     ... done
+Starting cassandra-web ... done
+```
+Go to http://localhost:5003/
+
 ## Stop services. Don't worry, the data persists!
 ```bash
 $ docker-compose -f mongo-compose.yml stop
