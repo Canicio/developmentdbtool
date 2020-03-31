@@ -9,6 +9,7 @@ Tool to deploying databases for a software development environment.
 ![Mysql Logo](resources/mysql_70x47.png) &nbsp;&nbsp;&nbsp;
 ![Mysql Logo](resources/postgres_120x55_despl.png) &nbsp;&nbsp;&nbsp;
 ![Mysql Logo](resources/Apache_Cassandra_66_60.png) &nbsp;&nbsp;&nbsp;
+![Mysql Logo](resources/mariadb_65x55.png) &nbsp;&nbsp;&nbsp;
 
 ## GUIs
 &nbsp;&nbsp;&nbsp;
@@ -90,12 +91,33 @@ Starting cassandra-web ... done
 ```
 Go to http://localhost:5003/
 
+## Run MariadDB (and PhpMyAdmin)
+```bash
+$ docker-compose -f mariadb-compose.yml up -d
+Starting mariadb    ... done
+Starting phpmyadmin ... done
+```
+Go to http://localhost:5004/
+
+##### Login PhpMyAdmin:
+```text
+user: root
+pass: root
+```
+
+##### Login MariadDB:
+```text
+user: root
+pass: root
+```
+
 ## Stop services. Don't worry, the data persists!
 ```bash
 $ docker-compose -f mongo-compose.yml stop
 $ docker-compose -f mysql-compose.yml stop
 $ docker-compose -f postgres-compose.yml stop
 $ docker-compose -f cassandra-compose.yml stop
+$ docker-compose -f mariadb-compose.yml stop
 ```
 
 ## Remove services. Don't worry, the data continues to persist!
@@ -104,6 +126,7 @@ $ docker-compose -f mongo-compose.yml down
 $ docker-compose -f mysql-compose.yml down
 $ docker-compose -f postgres-compose.yml down
 $ docker-compose -f cassandra-compose.yml down
+$ docker-compose -f mariadb-compose.yml down
 ```
 
 <br>

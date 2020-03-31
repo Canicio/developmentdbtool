@@ -17,11 +17,11 @@ services:
 
   phpmyadmin:
     image: bitnami/phpmyadmin:5.0.1-debian-10-r38
-    container_name: phpmyadmin_5.0.1_debian_10
+    container_name: phpmyadmin_5.0.1_mysql
     ports:
       - 5001:80
     volumes:
-      - ./gui_volumes/phpmyadmin/persist_conf:/bitnami
+      - ./gui_volumes/phpmyadmin/to_mysql/persist_conf:/bitnami
     environment:
       - DATABASE_HOST=mysql
       #- PHPMYADMIN_ALLOW_ARBITRARY_SERVER=true

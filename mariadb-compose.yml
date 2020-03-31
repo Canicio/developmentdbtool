@@ -1,0 +1,29 @@
+version: '3.7'
+
+# Environment mariadb
+
+services:
+
+  mariadb:
+    image: mariadb:10.5.2
+    container_name: mariadb_10.5.2
+    ports:
+      - 3306:3306
+    volumes:
+      - ./databases_volumes/mariadb/data:/var/lib/mysql
+      - ./databases_volumes/mariadb/conf:/etc/mysql/conf.d
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+
+  phpmyadmin:
+    image: bitnami/phpmyadmin:5.0.1-debian-10-r38
+    container_name: phpmyadmin_5.0.1_mariadb
+    ports:
+      - 5004:80
+    volumes:
+      - ./gui_volumes/phpmyadmin/to_mariadb/persist_conf:/bitnami
+    environment:
+      - DATABASE_HOST=mariadb
+      #- PHPMYADMIN_ALLOW_ARBITRARY_SERVER=true
+    depends_on:
+      - mariadb
