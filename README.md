@@ -5,7 +5,7 @@ Tool to deploying databases for a software development environment.
 
 ## Databases
 &nbsp;&nbsp;&nbsp;
-![Mysql Logo](resources/mongodb_45x57.png) &nbsp;&nbsp;&nbsp;
+![Mysql Logo](resources/mongodb_46x58.png) &nbsp;&nbsp;&nbsp;
 ![Mysql Logo](resources/mysql_70x47.png) &nbsp;&nbsp;&nbsp;
 ![Mysql Logo](resources/postgres_120x55_despl.png) &nbsp;&nbsp;&nbsp;
 ![Mysql Logo](resources/Apache_Cassandra_66_60.png) &nbsp;&nbsp;&nbsp;
