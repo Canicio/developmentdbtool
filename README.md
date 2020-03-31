@@ -91,7 +91,7 @@ Starting cassandra-web ... done
 ```
 Go to http://localhost:5003/
 
-## Run MariadDB (and PhpMyAdmin)
+## Run MariaDB (and PhpMyAdmin)
 ```bash
 $ docker-compose -f mariadb-compose.yml up -d
 Starting mariadb    ... done
@@ -105,7 +105,7 @@ user: root
 pass: root
 ```
 
-##### Login MariadDB:
+##### Login MariaDB:
 ```text
 user: root
 pass: root
